@@ -40,7 +40,7 @@ To install the project, follow these steps:
 1. Clone the repository:
     ```bash
     git clone the-repo-url.git
-    cd the-repo-url
+    cd the-repo-name
     ```
 
 2. Install the dependencies using Bundler:
