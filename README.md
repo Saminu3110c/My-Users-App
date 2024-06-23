@@ -53,6 +53,7 @@ To install the project, follow these steps:
 To start the server, run:
 ```bash
 bundle exec ruby app.rb -p 8080 -o 0.0.0.0
+```
 
 
 ### The Core Team
