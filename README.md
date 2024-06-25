@@ -39,8 +39,8 @@ To install the project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone the-repo-url.git
-    cd the-repo-name
+    git clone https://github.com/Saminu3110c/My-Users-App.git
+    cd My-Users-App
     ```
 
 2. Install the dependencies using Bundler:
