@@ -51,10 +51,41 @@ To install the project, follow these steps:
 
 ## Usage
 To start the server, run:
-```bash
-bundle exec ruby app.rb -p 8080 -o 0.0.0.0
-```
 
+1. Running the Application
+    ```bash
+    bundle exec ruby app.rb -p 8080 -o 0.0.0.0
+    ```
+
+2. Create a User
+    ```bash
+    curl -X POST -i http://localhost:8080/users -d "firstname=fName" -d "lastname=lName" -d "age=30" -d "password=secret" -d "email=name@example.com"
+    ```
+
+3. Get All users
+    ```bash
+    curl -X GET -i http://localhost:8080/users
+    ```
+
+4. Sign In
+    ```bash
+    curl -X POST -i -c cookies.txt http://localhost:8080/sign_in -d "email=name@example.com" -d "password=secret"
+    ```
+
+5. Update User Password (requires being signed in)
+    ```bash
+    curl -X PUT -i -b cookies.txt http://localhost:8080/users -d "password=newsecret"
+    ```
+
+6. Sign Out
+    ```bash
+    curl -X DELETE -i -b cookies.txt http://localhost:8080/sign_out
+    ```
+
+7. Delete User (requires being signed in)
+    ```bash
+    curl -X DELETE -i -b cookies.txt http://localhost:8080/users
+    ```
 
 ### The Core Team
 
