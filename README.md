@@ -40,19 +40,21 @@ To install the project, follow these steps:
 1. Clone the repository:
     ```bash
     git clone https://github.com/Saminu3110c/My-Users-App.git
+    ```
+    ```bash
     cd My-Users-App
     ```
 
 2. Install the dependencies using Bundler:
     ```bash
     gem install bundler
+    ```
+    ```bash
     bundle install
     ```
 
 ## Usage
-To start the server, run:
-
-1. Running the Application
+1. To start the server, run:
     ```bash
     bundle exec ruby app.rb -p 8080 -o 0.0.0.0
     ```
@@ -86,7 +88,10 @@ To start the server, run:
     ```bash
     curl -X DELETE -i -b cookies.txt http://localhost:8080/users
     ```
-
+8. Visit the following address to all the created users on your browser.
+    ```bash
+    http://localhost:8080/users
+    ```
 ### The Core Team
 
 
